@@ -6,6 +6,8 @@ class AddPostViewController: UIViewController {
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var textTextField: UITextField!
     
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
