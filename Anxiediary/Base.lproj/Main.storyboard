@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="FOW-h9-h1o">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="FOW-h9-h1o">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -47,16 +47,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="FHN-6L-oYK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8jS-Lw-jUr"/>
-                            <constraint firstItem="b7d-Fl-6at" firstAttribute="centerX" secondItem="FHN-6L-oYK" secondAttribute="centerX" id="GWc-mM-mYa"/>
+                            <constraint firstItem="FHN-6L-oYK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="A2m-lZ-NFe"/>
                             <constraint firstItem="b7d-Fl-6at" firstAttribute="trailing" secondItem="SwM-Lo-H5N" secondAttribute="trailing" id="KXq-eO-7zj"/>
+                            <constraint firstItem="FHN-6L-oYK" firstAttribute="centerX" secondItem="SwM-Lo-H5N" secondAttribute="centerX" id="LH8-VR-Rmb"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="b7d-Fl-6at" secondAttribute="bottom" constant="109" id="Paa-2b-Ns2"/>
                             <constraint firstItem="b7d-Fl-6at" firstAttribute="leading" secondItem="SwM-Lo-H5N" secondAttribute="leading" id="TXD-ss-Omh"/>
-                            <constraint firstItem="FHN-6L-oYK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="UGn-Qx-ede"/>
                             <constraint firstItem="SwM-Lo-H5N" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vh2-Vf-lgA"/>
                             <constraint firstItem="SwM-Lo-H5N" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="332" id="czw-YS-Xwy"/>
                             <constraint firstItem="b7d-Fl-6at" firstAttribute="top" secondItem="SwM-Lo-H5N" secondAttribute="bottom" constant="15" id="hQ3-qT-dha"/>
-                            <constraint firstItem="FHN-6L-oYK" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="oUC-9I-knJ"/>
+                            <constraint firstItem="FHN-6L-oYK" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="oYa-Ka-4UT"/>
+                            <constraint firstItem="FHN-6L-oYK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="u6n-7z-oCE"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fu7-Sg-EeX"/>
