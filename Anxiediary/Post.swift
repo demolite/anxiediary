@@ -3,7 +3,7 @@ import CoreData
 
 class Post: NSManagedObject {
 
-    convenience init(title: String, text: String) {
+    convenience init(title: String, text: String, mood: Int) {
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let managedContext = appDelegate.managedObjectContext
         let entity =  NSEntityDescription.entityForName("Post", inManagedObjectContext:managedContext)!
@@ -11,6 +11,7 @@ class Post: NSManagedObject {
         
         self.title = title
         self.text = text
+        self.mood = mood
         
     }
     

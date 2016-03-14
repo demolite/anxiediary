@@ -2,7 +2,7 @@
 //  Post+CoreDataProperties.swift
 //  Anxiediary
 //
-//  Created by Kyle Goslan on 07/03/2016.
+//  Created by Samuel Jones (i7262665) on 14/03/2016.
 //  Copyright © 2016 Kyle Goslan. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -14,7 +14,7 @@ import CoreData
 
 extension Post {
 
-    @NSManaged var text: String!
-    @NSManaged var title: String!
-
+    @NSManaged var text: String
+    @NSManaged var title: String
+    @NSManaged var mood: NSNumber
 }

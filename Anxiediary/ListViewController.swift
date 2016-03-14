@@ -52,6 +52,8 @@ extension ListViewController: UITableViewDataSource {
         let cellText = cell.viewWithTag(2) as! UILabel
         cellText.text = post.text
         
+
+        
         return cell
     }
 }

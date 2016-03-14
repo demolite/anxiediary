@@ -4,27 +4,42 @@ import CoreData
 class AddPostViewController: UIViewController {
     
     @IBOutlet weak var titleTextField: UITextField!
-    @IBOutlet weak var textTextField: UITextField!
+    @IBOutlet weak var textTextField: UITextView!
+    @IBOutlet weak var moodOne: UIButton!
+    @IBOutlet weak var moodTwo: UIButton!
+    @IBOutlet weak var moodThree: UIButton!
     
-   
+    var mood: Int!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        
+    }
+    
+    func resetView() {
+        textTextField.text = nil
+        titleTextField.text = nil
+        moodOne.alpha = 0.7
+        moodTwo.alpha = 0.7
+        moodThree.alpha = 0.7
+    }
+    
+    @IBAction func moodSelected(sender: UIButton) {
+            moodOne.alpha = 0.7
+            moodTwo.alpha = 0.7
+            moodThree.alpha = 0.7
+            sender.alpha = 1
+            mood = sender.tag
     }
     
     @IBAction func saveNewPost(sender: AnyObject) {
         
-        if textTextField.text! == ""  || titleTextField.text! == "" {
+        if textTextField.text! == ""  || titleTextField.text! == "" || mood == nil {
             return
         }
         
-        let _ = Post(title: titleTextField.text!, text: textTextField.text!)
+        let _ = Post(title: titleTextField.text!, text: textTextField.text!, mood: mood)
         
-        textTextField.text = nil
-        titleTextField.text = nil
+        resetView()
        
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let managedContext = appDelegate.managedObjectContext
