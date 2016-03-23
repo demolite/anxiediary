@@ -44,13 +44,21 @@ extension ListViewController: UITableViewDataSource {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell")!
         
+        cell.contentView.backgroundColor = UIColor.greenColor()
+        
         let post = posts[indexPath.row]
+        
         
         let cellTitle = cell.viewWithTag(1) as! UILabel
         cellTitle.text = post.title
         
+        
+        
         let cellText = cell.viewWithTag(2) as! UILabel
         cellText.text = post.text
+        
+        
+        
         
 
         

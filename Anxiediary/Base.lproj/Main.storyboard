@@ -311,13 +311,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" alpha="0.69999999999999996" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iSp-FH-HNn">
-                                <rect key="frame" x="494" y="322" width="60" height="60"/>
-                                <color key="backgroundColor" red="0.44467886927446432" green="1" blue="0.31118997871483423" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <action selector="moodSelected:" destination="pp3-IH-FnY" eventType="touchUpInside" id="9NY-ql-1xd"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" alpha="0.69999999999999996" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NIQ-Bk-2Q3">
                                 <rect key="frame" x="57" y="322" width="60" height="60"/>
                                 <color key="backgroundColor" red="1" green="0.060154431795314212" blue="0.04664670746241828" alpha="1" colorSpace="calibratedRGB"/>
@@ -367,6 +360,13 @@
                                 </constraints>
                                 <connections>
                                     <action selector="moodSelected:" destination="pp3-IH-FnY" eventType="touchUpInside" id="Ee3-az-NAH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.69999999999999996" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iSp-FH-HNn">
+                                <rect key="frame" x="494" y="322" width="60" height="60"/>
+                                <color key="backgroundColor" red="0.44467886927446432" green="1" blue="0.31118997871483423" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="moodSelected:" destination="pp3-IH-FnY" eventType="touchUpInside" id="9NY-ql-1xd"/>
                                 </connections>
                             </button>
                         </subviews>
