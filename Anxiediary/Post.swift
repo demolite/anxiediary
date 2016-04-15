@@ -2,6 +2,16 @@ import UIKit
 import CoreData
 
 class Post: NSManagedObject {
+    
+    var moodColor: UIColor {
+        if mood == 1 {
+            return .redColor()
+        }
+        if mood == 2 {
+            return .orangeColor()
+        }
+        return .greenColor()
+    }
 
     convenience init(title: String, text: String, mood: Int) {
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
