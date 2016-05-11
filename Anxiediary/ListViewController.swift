@@ -34,6 +34,17 @@ class ListViewController: UIViewController {
         return posts
     }
     
+    func deletePost(post: Post) {
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let managedContext = appDelegate.managedObjectContext
+        managedContext.deleteObject(post)
+        do {
+            try managedContext.save()
+        } catch let error as NSError  {
+            print("Could not save \(error), \(error.userInfo)")
+        }
+    }
+    
 }
 
 extension ListViewController: UITableViewDataSource {
@@ -55,16 +66,22 @@ extension ListViewController: UITableViewDataSource {
         let cellText = cell.viewWithTag(2) as! UILabel
         cellText.text = post.text
         
-        
-        
-        
-
-        
         return cell
     }
 }
 
 extension ListViewController: UITableViewDelegate {
-
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        print(NSDate())
+    }
+    
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if editingStyle == .Delete {
+            let post = posts.removeAtIndex(indexPath.row)
+            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+            deletePost(post)
+        }
+    }
 }
 
