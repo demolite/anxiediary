@@ -64,7 +64,7 @@ extension ListViewController: UITableViewDataSource {
         cellTitle.text = post.title
         
         let cellText = cell.viewWithTag(2) as! UILabel
-        cellText.text = post.text
+        cellText.text = post.text + " \(post.date)"
         
         return cell
     }
@@ -73,7 +73,7 @@ extension ListViewController: UITableViewDataSource {
 extension ListViewController: UITableViewDelegate {
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        print(NSDate())
+
     }
     
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {

@@ -14,9 +14,10 @@
 		27450D321C8D93140009558A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27450D311C8D93140009558A /* Assets.xcassets */; };
 		27450D351C8D93140009558A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27450D331C8D93140009558A /* LaunchScreen.storyboard */; };
 		27450D3D1C8D943C0009558A /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27450D3C1C8D943C0009558A /* ListViewController.swift */; };
-		27450D421C8D98240009558A /* Post+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27450D401C8D98240009558A /* Post+CoreDataProperties.swift */; };
 		27450D431C8D98240009558A /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27450D411C8D98240009558A /* Post.swift */; };
 		27450D451C8D9E4E0009558A /* AddPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27450D441C8D9E4E0009558A /* AddPostViewController.swift */; };
+		97F722141CEC8567003A78D6 /* Post+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F722131CEC8567003A78D6 /* Post+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
+		97F722161CEC8747003A78D6 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F722151CEC8747003A78D6 /* ReviewViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,9 +30,10 @@
 		27450D341C8D93140009558A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27450D361C8D93140009558A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27450D3C1C8D943C0009558A /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
-		27450D401C8D98240009558A /* Post+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Post+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		27450D411C8D98240009558A /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		27450D441C8D9E4E0009558A /* AddPostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPostViewController.swift; sourceTree = "<group>"; };
+		97F722131CEC8567003A78D6 /* Post+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Post+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		97F722151CEC8747003A78D6 /* ReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,11 +66,12 @@
 		27450D261C8D93140009558A /* Anxiediary */ = {
 			isa = PBXGroup;
 			children = (
-				27450D401C8D98240009558A /* Post+CoreDataProperties.swift */,
+				97F722131CEC8567003A78D6 /* Post+CoreDataProperties.swift */,
 				27450D411C8D98240009558A /* Post.swift */,
 				27450D271C8D93140009558A /* AppDelegate.swift */,
 				27450D291C8D93140009558A /* FirstViewController.swift */,
 				27450D2B1C8D93140009558A /* Main.storyboard */,
+				97F722151CEC8747003A78D6 /* ReviewViewController.swift */,
 				27450D441C8D9E4E0009558A /* AddPostViewController.swift */,
 				27450D3C1C8D943C0009558A /* ListViewController.swift */,
 				27450D311C8D93140009558A /* Assets.xcassets */,
@@ -162,8 +165,9 @@
 				27450D281C8D93140009558A /* AppDelegate.swift in Sources */,
 				27450D3D1C8D943C0009558A /* ListViewController.swift in Sources */,
 				27450D431C8D98240009558A /* Post.swift in Sources */,
-				27450D421C8D98240009558A /* Post+CoreDataProperties.swift in Sources */,
+				97F722141CEC8567003A78D6 /* Post+CoreDataProperties.swift in Sources */,
 				27450D301C8D93140009558A /* Anxiediary.xcdatamodeld in Sources */,
+				97F722161CEC8747003A78D6 /* ReviewViewController.swift in Sources */,
 				27450D451C8D9E4E0009558A /* AddPostViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

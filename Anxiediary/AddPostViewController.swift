@@ -37,7 +37,8 @@ class AddPostViewController: UIViewController {
             return
         }
         
-        let _ = Post(title: titleTextField.text!, text: textTextField.text!, mood: mood)
+        let newPost = Post(title: titleTextField.text!, text: textTextField.text!, mood: mood)
+        newPost.date = NSDate()
         
         resetView()
        
