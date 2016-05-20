@@ -103,108 +103,64 @@
                                     <constraint firstAttribute="width" constant="182" id="qKd-VV-BBv"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.99552162247474751" green="0.99552162247474751" blue="0.99552162247474751" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Colour System" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lU3-Jx-dvd">
-                                <rect key="frame" x="209" y="234" width="182" height="23"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZhR-Ly-ZsE">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" misplaced="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZhR-Ly-ZsE">
                                 <rect key="frame" x="20" y="117" width="560" height="92"/>
                                 <string key="text">Anxiediary is a self-help app for anxiety and mild depression sufferers. Used mainly while the user is being councelled by a professional, this friendly mobile app can help users target when they get stressed, anxious or depressed by colour coding each daily diary entry. </string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="TSx-ee-gPa">
-                                <rect key="frame" x="20" y="265" width="560" height="69"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="The Colour System" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lU3-Jx-dvd">
+                                <rect key="frame" x="209" y="217" width="182" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" red="0.99552162247474751" green="0.99552162247474751" blue="0.99552162247474751" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="TSx-ee-gPa">
+                                <rect key="frame" x="20" y="248" width="560" height="118"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="69" id="nvq-QH-KG4"/>
                                 </constraints>
-                                <string key="text">The colour system within this app determines the mood you wish to record in each entry. Depending on how you feel, each entry will be colour coded accordingly to allow you to track your progress as the month goes by. </string>
+                                <string key="text">The colour system within this app determines the mood you wish to record in each entry. Depending on how you feel, each entry will be colour coded accordingly to allow you to track your progress as the month goes by. Using the traffic light colours red, amber and green, you can indicate the amount of positivity you have felt.</string>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Red" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oJO-Jb-Nvh">
-                                <rect key="frame" x="89" y="342" width="36" height="27"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" red="0.86284722222222221" green="0.17240103297740725" blue="0.088708487496854796" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="This colour indicates that you have had a bad day. you have suffered extreme stress, anxiety or depressive thoughts." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4lr-t5-5LC">
-                                <rect key="frame" x="31" y="377" width="152" height="128"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Credit" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="B1e-nm-IHT">
+                                <rect key="frame" x="180" y="348" width="240" height="36"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="A86-Hw-IzQ">
-                                <rect key="frame" x="217" y="377" width="152" height="133"/>
-                                <string key="text">This colour indicates that you have had a day that was okay, but not the greatest. It had good moments perhaps, but not anything amazing.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vno-mS-g5F">
+                                <rect key="frame" x="27" y="380" width="553" height="128"/>
+                                <string key="text">This application was designed as part of the Digital Media Design course at Bournemouth University by Samuel Jones. If you want to find out more and keep up to date with new information about Anxiediary, please tap on the social media links below.</string>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="bLm-vk-3DM">
-                                <rect key="frame" x="398" y="380" width="152" height="133"/>
-                                <string key="text">This colour indicates that you had a great day. Try and outline the things that made you happy, so you can reflect on them in the future.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Green" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lCa-QL-pT0">
-                                <rect key="frame" x="444" y="345" width="60" height="27"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="27" id="EzZ-El-Nc8"/>
-                                    <constraint firstAttribute="width" constant="60" id="jOM-mt-irB"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" red="0.4446788693" green="1" blue="0.31118997869999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amber" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="McA-wt-H4v">
-                                <rect key="frame" x="263" y="342" width="60" height="27"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" red="1" green="0.80616909579999996" blue="0.053915535600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="U4H-aH-xOV" firstAttribute="top" secondItem="bLm-vk-3DM" secondAttribute="bottom" constant="87" id="1eV-i7-nJb"/>
-                            <constraint firstItem="4lr-t5-5LC" firstAttribute="top" secondItem="A86-Hw-IzQ" secondAttribute="top" id="3BP-Gv-ob3"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="lCa-QL-pT0" secondAttribute="trailing" constant="76" id="3jd-Qm-jTP"/>
                             <constraint firstItem="OC8-gI-M2O" firstAttribute="leading" secondItem="lU3-Jx-dvd" secondAttribute="leading" id="6IV-Gg-rND"/>
                             <constraint firstItem="lU3-Jx-dvd" firstAttribute="centerX" secondItem="TSx-ee-gPa" secondAttribute="centerX" id="7PQ-pJ-zLm"/>
                             <constraint firstItem="LNk-eu-ST7" firstAttribute="centerX" secondItem="OC8-gI-M2O" secondAttribute="centerX" id="AHP-SK-EXG"/>
-                            <constraint firstItem="oJO-Jb-Nvh" firstAttribute="top" secondItem="TSx-ee-gPa" secondAttribute="bottom" constant="8" symbolic="YES" id="AOK-Q9-oIg"/>
                             <constraint firstItem="ZhR-Ly-ZsE" firstAttribute="top" secondItem="OC8-gI-M2O" secondAttribute="bottom" constant="8" symbolic="YES" id="AVB-NV-c2E"/>
-                            <constraint firstItem="A86-Hw-IzQ" firstAttribute="leading" secondItem="4lr-t5-5LC" secondAttribute="trailing" constant="34" id="Ca5-yf-QEC"/>
-                            <constraint firstItem="oJO-Jb-Nvh" firstAttribute="centerX" secondItem="4lr-t5-5LC" secondAttribute="centerX" id="DXf-8i-D9Y"/>
-                            <constraint firstItem="oJO-Jb-Nvh" firstAttribute="leading" secondItem="1Nk-ch-3ao" secondAttribute="leadingMargin" constant="69" id="I82-u2-8O0"/>
-                            <constraint firstItem="4lr-t5-5LC" firstAttribute="top" secondItem="oJO-Jb-Nvh" secondAttribute="bottom" constant="8" symbolic="YES" id="LOF-3M-f1A"/>
-                            <constraint firstItem="McA-wt-H4v" firstAttribute="baseline" secondItem="lCa-QL-pT0" secondAttribute="firstBaseline" id="MH4-IN-uel"/>
-                            <constraint firstItem="bLm-vk-3DM" firstAttribute="top" secondItem="lCa-QL-pT0" secondAttribute="bottom" constant="8" symbolic="YES" id="Mf0-Lb-ilO"/>
                             <constraint firstItem="TSx-ee-gPa" firstAttribute="centerY" secondItem="1Nk-ch-3ao" secondAttribute="centerY" id="OvI-hM-YbD"/>
-                            <constraint firstItem="U4H-aH-xOV" firstAttribute="top" secondItem="A86-Hw-IzQ" secondAttribute="bottom" constant="90" id="P6W-5V-jOs"/>
                             <constraint firstItem="ZhR-Ly-ZsE" firstAttribute="leading" secondItem="1Nk-ch-3ao" secondAttribute="leadingMargin" id="PCW-Yi-h9I"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="bLm-vk-3DM" secondAttribute="trailing" constant="30" id="PKo-hp-kgj"/>
                             <constraint firstItem="lU3-Jx-dvd" firstAttribute="trailing" secondItem="OC8-gI-M2O" secondAttribute="trailing" id="PcZ-Lf-pes"/>
                             <constraint firstItem="LNk-eu-ST7" firstAttribute="bottom" secondItem="U4H-aH-xOV" secondAttribute="top" id="XeK-kF-mYH"/>
-                            <constraint firstItem="lCa-QL-pT0" firstAttribute="top" secondItem="TSx-ee-gPa" secondAttribute="bottom" constant="11" id="Y7l-cr-FsX"/>
                             <constraint firstItem="TSx-ee-gPa" firstAttribute="top" secondItem="lU3-Jx-dvd" secondAttribute="bottom" constant="8" symbolic="YES" id="Zqt-JY-6Ts"/>
-                            <constraint firstItem="U4H-aH-xOV" firstAttribute="top" secondItem="4lr-t5-5LC" secondAttribute="bottom" constant="95" id="aaE-c2-iWy"/>
                             <constraint firstItem="TSx-ee-gPa" firstAttribute="leading" secondItem="ZhR-Ly-ZsE" secondAttribute="leading" id="aqB-c9-C4z"/>
-                            <constraint firstItem="oJO-Jb-Nvh" firstAttribute="baseline" secondItem="McA-wt-H4v" secondAttribute="baseline" id="bBe-tY-D6L"/>
-                            <constraint firstItem="oJO-Jb-Nvh" firstAttribute="firstBaseline" secondItem="McA-wt-H4v" secondAttribute="firstBaseline" id="fRh-2p-K9w"/>
-                            <constraint firstItem="bLm-vk-3DM" firstAttribute="leading" secondItem="A86-Hw-IzQ" secondAttribute="trailing" constant="29" id="hFQ-dd-A2m"/>
                             <constraint firstItem="OC8-gI-M2O" firstAttribute="top" secondItem="OKN-Z7-vYg" secondAttribute="bottom" constant="25" id="kj4-HX-Rac"/>
                             <constraint firstItem="lU3-Jx-dvd" firstAttribute="top" secondItem="ZhR-Ly-ZsE" secondAttribute="bottom" constant="25" id="ngF-qK-nJH"/>
                             <constraint firstItem="LNk-eu-ST7" firstAttribute="top" secondItem="OKN-Z7-vYg" secondAttribute="bottom" id="rEa-hn-FS3"/>
-                            <constraint firstItem="A86-Hw-IzQ" firstAttribute="centerX" secondItem="McA-wt-H4v" secondAttribute="centerX" id="riK-Ns-jry"/>
                             <constraint firstItem="ZhR-Ly-ZsE" firstAttribute="trailing" secondItem="TSx-ee-gPa" secondAttribute="trailing" id="sQL-7A-9zm"/>
                             <constraint firstItem="LNk-eu-ST7" firstAttribute="leading" secondItem="1Nk-ch-3ao" secondAttribute="leading" id="uRS-xu-S23"/>
                             <constraint firstAttribute="trailing" secondItem="LNk-eu-ST7" secondAttribute="trailing" id="uZ7-bf-5hP"/>
-                            <constraint firstItem="4lr-t5-5LC" firstAttribute="leading" secondItem="1Nk-ch-3ao" secondAttribute="leadingMargin" constant="11" id="vdD-cW-OiY"/>
-                            <constraint firstItem="bLm-vk-3DM" firstAttribute="centerX" secondItem="lCa-QL-pT0" secondAttribute="centerX" id="wFI-be-YOw"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -227,31 +183,16 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background  Plain " translatesAutoresizingMaskIntoConstraints="NO" id="CPq-uw-sei">
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qum-Ra-VBQ">
-                                <rect key="frame" x="102" y="275" width="101" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cW2-eX-x1S">
-                                <rect key="frame" x="81" y="203" width="438" height="193"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="cW2-eX-x1S">
+                                <rect key="frame" x="81" y="235" width="438" height="193"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="esx-ee-r2s">
-                                <rect key="frame" x="81" y="203" width="438" height="193"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <connections>
-                        <outlet property="demoLabel" destination="Qum-Ra-VBQ" id="uhl-tD-M1o"/>
-                        <outlet property="reviewText" destination="esx-ee-r2s" id="whi-k9-ek7"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S0a-tg-HPf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -351,7 +292,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cQP-3b-Ez8">
                                 <rect key="frame" x="283" y="550" width="34" height="30"/>
                                 <state key="normal" title="Save">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="saveNewPost:" destination="pp3-IH-FnY" eventType="touchUpInside" id="07S-pf-blX"/>
@@ -372,7 +313,7 @@
                                     <constraint firstAttribute="width" constant="60" id="7Vd-gZ-sRj"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amber" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="heM-Kd-zVL">
@@ -381,19 +322,19 @@
                                     <constraint firstAttribute="width" constant="62" id="jys-Dv-RS9"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Green" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cry-Wr-pOu">
                                 <rect key="frame" x="497" y="290" width="54" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How do you feel today?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Maf-KD-yaF">
                                 <rect key="frame" x="195" y="221" width="211" height="45"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" alpha="0.69999999999999996" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4t-Xl-BnW">

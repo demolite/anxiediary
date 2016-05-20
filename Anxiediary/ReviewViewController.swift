@@ -22,7 +22,9 @@ class ReviewViewController: UIViewController {
         super.viewDidLoad()
         posts = loadPosts()
         
-        countPosts()
+        func countPosts() {
+            for post in posts {
+
         
         if goodPosts > 5 {
             reviewText.text = "Unfortunately it looks like this month hasn't been great at all for you. Lets try and reflect on your bad days properly so we can understand why those days weren't so good, along with what has triggered your anxiety and stress. Speak to your councillor about perhaps giving you new exercises to complete during the following month."
