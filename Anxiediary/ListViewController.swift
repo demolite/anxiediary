@@ -17,7 +17,7 @@ class ListViewController: UIViewController {
         posts = loadPosts()
         tabelView.reloadData()
         
-        if posts.count > 0 {
+        if posts.count > 30 {
             addButton.enabled = false
         }
         
