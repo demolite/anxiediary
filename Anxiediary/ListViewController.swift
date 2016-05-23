@@ -6,6 +6,7 @@ class ListViewController: UIViewController {
     var posts = [Post]()
     
     @IBOutlet weak var tabelView: UITableView!
+    @IBOutlet weak var addButton: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,6 +16,11 @@ class ListViewController: UIViewController {
         super.viewDidAppear(animated)
         posts = loadPosts()
         tabelView.reloadData()
+        
+        if posts.count > 0 {
+            addButton.enabled = false
+        }
+        
     }
 
     

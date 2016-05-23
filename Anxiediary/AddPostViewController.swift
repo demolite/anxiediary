@@ -13,6 +13,7 @@ class AddPostViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
     
     func resetView() {
@@ -49,6 +50,11 @@ class AddPostViewController: UIViewController {
         } catch let error as NSError  {
             print("Could not save \(error), \(error.userInfo)")
         }
+        done(self)
+    }
+
+    @IBAction func done(sender: AnyObject) {
+         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
 }
