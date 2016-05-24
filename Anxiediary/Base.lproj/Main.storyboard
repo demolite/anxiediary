@@ -4,6 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -333,7 +334,10 @@
                             <button opaque="NO" alpha="0.69999999999999996" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4t-Xl-BnW">
                                 <rect key="frame" x="275" y="312" width="50" height="50"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="5Ii-OG-tNB"/>
                                     <constraint firstAttribute="width" constant="50" id="CvE-oi-OiV"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="DiM-g0-PEs"/>
+                                    <constraint firstAttribute="width" secondItem="C4t-Xl-BnW" secondAttribute="height" multiplier="1:1" id="Edy-Cf-Jxv"/>
                                 </constraints>
                                 <state key="normal" image="Yellow Traffic Light"/>
                                 <connections>
@@ -344,6 +348,9 @@
                                 <rect key="frame" x="499" y="312" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="DMl-Na-YtP"/>
+                                    <constraint firstAttribute="height" constant="50" id="P9l-sI-EIU"/>
+                                    <constraint firstAttribute="width" secondItem="iSp-FH-HNn" secondAttribute="height" multiplier="1:1" id="hjb-bG-tgi"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="pq9-5a-kEe"/>
                                 </constraints>
                                 <state key="normal" image="Green Traffic Light"/>
                                 <connections>
@@ -361,6 +368,9 @@
                             <button opaque="NO" alpha="0.69999999999999996" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NIQ-Bk-2Q3">
                                 <rect key="frame" x="62" y="312" width="50" height="50"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="SD9-F5-Lxo"/>
+                                    <constraint firstAttribute="width" secondItem="NIQ-Bk-2Q3" secondAttribute="height" multiplier="1:1" id="nkl-np-iWO"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="p2V-Xe-uFH"/>
                                     <constraint firstAttribute="width" constant="50" id="u0w-so-Id3"/>
                                 </constraints>
                                 <state key="normal" image="Red Traffic Light"/>
