@@ -108,27 +108,34 @@
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZhR-Ly-ZsE">
                                 <rect key="frame" x="20" y="208" width="560" height="383"/>
-                                <string key="text">Anxiediary is a self-help app for anxiety and mild depression sufferers. Used mainly while the user is being councelled by a professional, this friendly mobile app can help users target when they get stressed, anxious or depressed by colour coding each daily diary entry. The colour system within this app determines the mood you wish to record in each entry. Depending on how you feel, each entry will be colour coded accordingly to allow you to track your progress as the month goes by. Using the traffic light colours red, amber and green, you can indicate the amount of positivity you have felt. This application was designed as part of the Digital Media Design course at Bournemouth University by Samuel Jones. If you want to find out more and keep up to date with new information about Anxiediary, follow us on Twitter, Instagram or Like us on Facebook!</string>
+                                <mutableString key="text">Anxiediary is a self-help app for anxiety and mild depression sufferers. Used mainly while the user is being councelled by a professional, this friendly mobile app can help users target when they get stressed, anxious or depressed by colour coding each daily diary entry.
+
+ The colour system within this app determines the mood you wish to record in each entry. Depending on how you feel, each entry will be colour coded accordingly to allow you to track your progress as the month goes by. Using the traffic light colours red, amber and green, you can indicate the amount of positivity you have felt. 
+
+If you want to find out more and keep up to date with new information about Anxiediary, follow us on Twitter, Instagram or Like us on Facebook!
+
+ This application was designed as part of the Digital Media Design course at Bournemouth University by Samuel Jones. 
+</mutableString>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo - 180px" translatesAutoresizingMaskIntoConstraints="NO" id="qxI-Nk-I9C">
-                                <rect key="frame" x="209" y="102" width="183" height="98"/>
+                                <rect key="frame" x="209" y="72" width="183" height="98"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="98" id="50n-Dz-GHE"/>
-                                    <constraint firstAttribute="width" constant="183" id="mxh-ga-3db"/>
+                                    <constraint firstAttribute="height" constant="98" id="Wz6-Ra-8RT"/>
+                                    <constraint firstAttribute="width" constant="183" id="fSa-N0-Z2I"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="qxI-Nk-I9C" firstAttribute="centerX" secondItem="ZhR-Ly-ZsE" secondAttribute="centerX" id="2kM-DG-rpQ"/>
-                            <constraint firstItem="ZhR-Ly-ZsE" firstAttribute="top" secondItem="qxI-Nk-I9C" secondAttribute="bottom" constant="8" symbolic="YES" id="56B-1P-dYn"/>
                             <constraint firstAttribute="trailing" secondItem="LNk-eu-ST7" secondAttribute="trailing" id="6gw-bV-eCL"/>
-                            <constraint firstItem="qxI-Nk-I9C" firstAttribute="top" secondItem="OKN-Z7-vYg" secondAttribute="bottom" constant="38" id="BeP-Q2-Vev"/>
+                            <constraint firstItem="ZhR-Ly-ZsE" firstAttribute="top" secondItem="qxI-Nk-I9C" secondAttribute="bottom" constant="38" id="7Br-Sa-Gz2"/>
+                            <constraint firstItem="qxI-Nk-I9C" firstAttribute="top" secondItem="OKN-Z7-vYg" secondAttribute="bottom" constant="8" symbolic="YES" id="9ML-hT-lfi"/>
                             <constraint firstItem="ZhR-Ly-ZsE" firstAttribute="centerX" secondItem="LNk-eu-ST7" secondAttribute="centerX" id="Eai-R4-R1Z"/>
                             <constraint firstItem="ZhR-Ly-ZsE" firstAttribute="leading" secondItem="1Nk-ch-3ao" secondAttribute="leadingMargin" id="HoF-5g-UAY"/>
+                            <constraint firstItem="qxI-Nk-I9C" firstAttribute="centerX" secondItem="ZhR-Ly-ZsE" secondAttribute="centerX" id="SIp-5M-ZQF"/>
                             <constraint firstItem="LNk-eu-ST7" firstAttribute="leading" secondItem="1Nk-ch-3ao" secondAttribute="leading" id="bJN-iY-gXc"/>
                             <constraint firstItem="U4H-aH-xOV" firstAttribute="top" secondItem="LNk-eu-ST7" secondAttribute="bottom" constant="8" symbolic="YES" id="cU9-eM-ejv"/>
                             <constraint firstItem="LNk-eu-ST7" firstAttribute="top" secondItem="1Nk-ch-3ao" secondAttribute="topMargin" constant="56" id="cvf-aX-ZzI"/>
@@ -283,9 +290,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Background  Plain " translatesAutoresizingMaskIntoConstraints="NO" id="dOb-eO-yqm">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="603"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cQP-3b-Ez8">
                                 <rect key="frame" x="283" y="550" width="34" height="30"/>
                                 <state key="normal" title="Save">
@@ -390,6 +394,9 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Background  Plain " translatesAutoresizingMaskIntoConstraints="NO" id="dOb-eO-yqm">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="603"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>

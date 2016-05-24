@@ -17,12 +17,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: nil))
+        
         return true
     }
 
     func applicationWillResignActive(application: UIApplication) {
-        // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-        // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+        
+        //cancle all notifications
+        UIApplication.sharedApplication().cancelAllLocalNotifications()
+        
+        let notification = UILocalNotification()
+        notification.alertBody = "You need to write your diary entry for today." // text that will be displayed in the notification
+        notification.alertAction = "open" // text that is displayed after "slide to..." on the lock screen - defaults to "slide to view"
+        notification.fireDate = NSDate(timeIntervalSinceNow: 5)//60*60*24*1 todo item due date (when notification will be fired)
+        notification.soundName = UILocalNotificationDefaultSoundName // play default sound
+        UIApplication.sharedApplication().scheduleLocalNotification(notification)
     }
 
     func applicationDidEnterBackground(application: UIApplication) {

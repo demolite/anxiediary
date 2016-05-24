@@ -8,6 +8,8 @@ class FirstViewController: UIViewController {
         
         
         
+        
+        
     }
 
     @IBAction func reset(sender: AnyObject) {
