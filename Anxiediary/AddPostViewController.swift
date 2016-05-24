@@ -19,15 +19,15 @@ class AddPostViewController: UIViewController {
     func resetView() {
         textTextField.text = nil
         titleTextField.text = nil
-        moodOne.alpha = 0.7
-        moodTwo.alpha = 0.7
-        moodThree.alpha = 0.7
+        moodOne.alpha = 0.3
+        moodTwo.alpha = 0.3
+        moodThree.alpha = 0.3
     }
     
     @IBAction func moodSelected(sender: UIButton) {
-            moodOne.alpha = 0.7
-            moodTwo.alpha = 0.7
-            moodThree.alpha = 0.7
+            moodOne.alpha = 0.3
+            moodTwo.alpha = 0.3
+            moodThree.alpha = 0.3
             sender.alpha = 1
             mood = sender.tag
     }
