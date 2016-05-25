@@ -51,6 +51,12 @@ class ListViewController: UIViewController {
         }
     }
     
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let vc = segue.destinationViewController as! AddPostViewController
+        vc.post = sender as? Post
+    }
+    
 }
 
 extension ListViewController: UITableViewDataSource {
@@ -79,7 +85,8 @@ extension ListViewController: UITableViewDataSource {
 extension ListViewController: UITableViewDelegate {
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-
+        let post = posts[indexPath.row]
+        performSegueWithIdentifier("NewPost", sender: post)
     }
     
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {

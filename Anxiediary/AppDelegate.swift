@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  Anxiediary
 //
-//  Created by Kyle Goslan on 07/03/2016.
-//  Copyright © 2016 Kyle Goslan. All rights reserved.
+//  Created by Samuel Jones on 07/03/2016.
+//  Copyright © 2016 Samuel Jones. All rights reserved.
 //
 
 import UIKit
@@ -25,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillResignActive(application: UIApplication) {
         
-        //cancle all notifications
+        //cancel all notifications
         UIApplication.sharedApplication().cancelAllLocalNotifications()
         
         let notification = UILocalNotification()

@@ -10,9 +10,15 @@ class AddPostViewController: UIViewController {
     @IBOutlet weak var moodThree: UIButton!
     
     var mood: Int!
+    var post: Post?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let post = post {
+            titleTextField.text = post.title
+        }
+        
         
     }
     
@@ -38,10 +44,16 @@ class AddPostViewController: UIViewController {
             return
         }
         
-        let newPost = Post(title: titleTextField.text!, text: textTextField.text!, mood: mood)
-        newPost.date = NSDate()
+        if let post = post {
+            post.title = titleTextField.text!
+        } else {
+            let newPost = Post(title: titleTextField.text!, text: textTextField.text!, mood: mood)
+            newPost.date = NSDate()
+            
+            resetView()
+        }
         
-        resetView()
+        
        
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let managedContext = appDelegate.managedObjectContext

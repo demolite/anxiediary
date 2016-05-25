@@ -53,8 +53,8 @@
                                     <segue destination="VhS-ho-dYU" kind="show" id="Tml-ee-c2e"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kr6-5e-tNs">
-                                <rect key="frame" x="20" y="72" width="39" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kr6-5e-tNs">
+                                <rect key="frame" x="0.0" y="72" width="126" height="80"/>
                                 <state key="normal" title="Reset">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -105,14 +105,14 @@
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZhR-Ly-ZsE">
                                 <rect key="frame" x="20" y="208" width="560" height="383"/>
-                                <mutableString key="text">Anxiediary is a self-help app for anxiety and mild depression sufferers. Used mainly while the user is being councelled by a professional, this friendly mobile app can help users target when they get stressed, anxious or depressed by colour coding each daily diary entry.
+                                <string key="text">Anxiediary is a self-help app for anxiety and mild depression sufferers. Used mainly while the user is being councelled by a professional, this friendly mobile app can help users target when they get stressed, anxious or depressed by colour coding each daily diary entry.
 
  The colour system within this app determines the mood you wish to record in each entry. Depending on how you feel, each entry will be colour coded accordingly to allow you to track your progress as the month goes by. Using the traffic light colours red, amber and green, you can indicate the amount of positivity you have felt. 
 
 If you want to find out more and keep up to date with new information about Anxiediary, follow us on Twitter, Instagram or Like us on Facebook!
 
  This application was designed as part of the Digital Media Design course at Bournemouth University by Samuel Jones. 
-</mutableString>
+</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -260,7 +260,7 @@ If you want to find out more and keep up to date with new information about Anxi
                     <navigationItem key="navigationItem" id="Zy6-Kb-Aiv">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Mbk-E0-r0H">
                             <connections>
-                                <segue destination="pp3-IH-FnY" kind="popoverPresentation" popoverAnchorBarButtonItem="Mbk-E0-r0H" id="IuM-Va-qNg">
+                                <segue destination="pp3-IH-FnY" kind="popoverPresentation" identifier="NewPost" popoverAnchorBarButtonItem="Mbk-E0-r0H" id="IuM-Va-qNg">
                                     <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
                                 </segue>
                             </connections>
@@ -308,12 +308,6 @@ If you want to find out more and keep up to date with new information about Anxi
                                     <outlet property="delegate" destination="pp3-IH-FnY" id="ZN6-l3-xRH"/>
                                 </connections>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bad" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jHL-e5-BNW">
-                                <rect key="frame" x="57" y="370" width="60" height="28"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Average" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="heM-Kd-zVL">
                                 <rect key="frame" x="263" y="374" width="74" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -329,7 +323,8 @@ If you want to find out more and keep up to date with new information about Anxi
                             <button opaque="NO" alpha="0.29999999999999999" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4t-Xl-BnW">
                                 <rect key="frame" x="275" y="312" width="50" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="1tt-hB-PRH"/>
+                                    <constraint firstAttribute="height" constant="50" id="VG5-g6-JnP"/>
+                                    <constraint firstAttribute="width" constant="50" id="l12-of-oRN"/>
                                 </constraints>
                                 <state key="normal" image="Yellow Traffic Light"/>
                                 <connections>
@@ -352,11 +347,7 @@ If you want to find out more and keep up to date with new information about Anxi
                                 </connections>
                             </textField>
                             <button opaque="NO" alpha="0.29999999999999999" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NIQ-Bk-2Q3">
-                                <rect key="frame" x="62" y="312" width="50" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="PhS-Yl-Nvv"/>
-                                    <constraint firstAttribute="height" constant="50" id="Qmd-Kn-e0n"/>
-                                </constraints>
+                                <rect key="frame" x="51" y="312" width="50" height="50"/>
                                 <state key="normal" image="Red Traffic Light"/>
                                 <connections>
                                     <action selector="moodSelected:" destination="pp3-IH-FnY" eventType="touchUpInside" id="da5-wq-0NG"/>
@@ -376,9 +367,12 @@ If you want to find out more and keep up to date with new information about Anxi
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Good" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cry-Wr-pOu">
                                 <rect key="frame" x="499" y="374" width="49" height="24"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="49" id="yIc-yf-Bel"/>
-                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bad" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jHL-e5-BNW">
+                                <rect key="frame" x="46" y="370" width="60" height="28"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -386,42 +380,43 @@ If you want to find out more and keep up to date with new information about Anxi
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="iSp-FH-HNn" firstAttribute="centerX" secondItem="cry-Wr-pOu" secondAttribute="centerX" id="1JU-6S-raj"/>
+                            <constraint firstItem="jHL-e5-BNW" firstAttribute="centerX" secondItem="NIQ-Bk-2Q3" secondAttribute="centerX" id="0wU-f3-e02"/>
                             <constraint firstItem="ZiV-Wt-Yu2" firstAttribute="top" secondItem="g7o-0q-WNg" secondAttribute="bottom" constant="8" id="3Ov-yq-gEI"/>
-                            <constraint firstItem="cry-Wr-pOu" firstAttribute="leading" secondItem="iSp-FH-HNn" secondAttribute="leading" id="4Gn-i9-7tb"/>
-                            <constraint firstItem="C4t-Xl-BnW" firstAttribute="top" secondItem="Maf-KD-yaF" secondAttribute="bottom" constant="46" id="5U7-BP-FwY"/>
+                            <constraint firstItem="bXK-hc-ft9" firstAttribute="top" secondItem="jHL-e5-BNW" secondAttribute="bottom" constant="202" id="5Cm-7v-JTH"/>
+                            <constraint firstItem="jHL-e5-BNW" firstAttribute="baseline" secondItem="heM-Kd-zVL" secondAttribute="baseline" id="6BW-YW-R2s"/>
                             <constraint firstItem="g7o-0q-WNg" firstAttribute="top" secondItem="hW8-V0-h9F" secondAttribute="bottom" id="7jx-aa-2UL"/>
-                            <constraint firstItem="cry-Wr-pOu" firstAttribute="baseline" secondItem="heM-Kd-zVL" secondAttribute="baseline" id="96w-Qh-Bqe"/>
                             <constraint firstAttribute="bottom" secondItem="cQP-3b-Ez8" secondAttribute="bottom" constant="20" symbolic="YES" id="AvB-K3-XF5"/>
+                            <constraint firstItem="cry-Wr-pOu" firstAttribute="centerX" secondItem="iSp-FH-HNn" secondAttribute="centerX" id="BsV-bn-9Cx"/>
                             <constraint firstItem="dOb-eO-yqm" firstAttribute="trailing" secondItem="g7o-0q-WNg" secondAttribute="trailing" id="C0A-Jo-iae"/>
-                            <constraint firstItem="heM-Kd-zVL" firstAttribute="top" secondItem="C4t-Xl-BnW" secondAttribute="bottom" constant="12" id="DhA-89-Qpc"/>
-                            <constraint firstItem="NIQ-Bk-2Q3" firstAttribute="leading" secondItem="DdW-nU-i6y" secondAttribute="leadingMargin" constant="42" id="Duf-3a-8M9"/>
                             <constraint firstItem="dOb-eO-yqm" firstAttribute="top" secondItem="DdW-nU-i6y" secondAttribute="top" id="E1i-gu-fOy"/>
                             <constraint firstAttribute="bottomMargin" secondItem="dOb-eO-yqm" secondAttribute="bottom" constant="-3" id="Hi1-lY-k0V"/>
-                            <constraint firstItem="NIQ-Bk-2Q3" firstAttribute="top" secondItem="o2j-Xr-lbp" secondAttribute="bottom" constant="99" id="J0c-mu-Da0"/>
-                            <constraint firstItem="C4t-Xl-BnW" firstAttribute="bottom" secondItem="NIQ-Bk-2Q3" secondAttribute="bottom" id="JmB-Iq-eCX"/>
-                            <constraint firstItem="heM-Kd-zVL" firstAttribute="centerX" secondItem="C4t-Xl-BnW" secondAttribute="centerX" id="LMF-tr-8cG"/>
+                            <constraint firstItem="cry-Wr-pOu" firstAttribute="top" secondItem="iSp-FH-HNn" secondAttribute="bottom" constant="12" id="KX6-UK-pqt"/>
                             <constraint firstItem="o2j-Xr-lbp" firstAttribute="leading" secondItem="ZiV-Wt-Yu2" secondAttribute="leading" id="MgD-34-iqo"/>
                             <constraint firstItem="g7o-0q-WNg" firstAttribute="leading" secondItem="DdW-nU-i6y" secondAttribute="leading" id="N5r-65-1Hp"/>
-                            <constraint firstItem="NIQ-Bk-2Q3" firstAttribute="centerX" secondItem="jHL-e5-BNW" secondAttribute="centerX" id="OOL-id-Ny3"/>
-                            <constraint firstItem="jHL-e5-BNW" firstAttribute="top" secondItem="NIQ-Bk-2Q3" secondAttribute="bottom" constant="8" symbolic="YES" id="Q4y-fz-gfm"/>
                             <constraint firstItem="o2j-Xr-lbp" firstAttribute="top" secondItem="ZiV-Wt-Yu2" secondAttribute="bottom" constant="8" symbolic="YES" id="UVe-jX-MKs"/>
+                            <constraint firstItem="heM-Kd-zVL" firstAttribute="top" secondItem="C4t-Xl-BnW" secondAttribute="bottom" constant="12" id="XYz-X2-r9H"/>
                             <constraint firstItem="Maf-KD-yaF" firstAttribute="top" secondItem="o2j-Xr-lbp" secondAttribute="bottom" constant="8" symbolic="YES" id="ZQV-UH-HX0"/>
+                            <constraint firstItem="iSp-FH-HNn" firstAttribute="width" secondItem="C4t-Xl-BnW" secondAttribute="width" id="ZZs-YD-AaU"/>
                             <constraint firstItem="Maf-KD-yaF" firstAttribute="centerX" secondItem="o2j-Xr-lbp" secondAttribute="centerX" id="Zol-eJ-GPJ"/>
-                            <constraint firstItem="bXK-hc-ft9" firstAttribute="top" secondItem="jHL-e5-BNW" secondAttribute="bottom" constant="202" id="bBA-GJ-46F"/>
-                            <constraint firstItem="jHL-e5-BNW" firstAttribute="leading" secondItem="DdW-nU-i6y" secondAttribute="leadingMargin" constant="37" id="cde-de-LvY"/>
-                            <constraint firstItem="C4t-Xl-BnW" firstAttribute="centerX" secondItem="Maf-KD-yaF" secondAttribute="centerX" id="eb5-wj-h0y"/>
+                            <constraint firstItem="heM-Kd-zVL" firstAttribute="centerX" secondItem="C4t-Xl-BnW" secondAttribute="centerX" id="bw5-rU-LiM"/>
+                            <constraint firstItem="C4t-Xl-BnW" firstAttribute="centerX" secondItem="Maf-KD-yaF" secondAttribute="centerX" id="dhQ-V2-m7a"/>
+                            <constraint firstItem="jHL-e5-BNW" firstAttribute="top" secondItem="NIQ-Bk-2Q3" secondAttribute="bottom" constant="8" id="dz0-Bz-idH"/>
                             <constraint firstItem="g7o-0q-WNg" firstAttribute="centerX" secondItem="ZiV-Wt-Yu2" secondAttribute="centerX" id="el4-I0-b6y"/>
-                            <constraint firstItem="heM-Kd-zVL" firstAttribute="baseline" secondItem="jHL-e5-BNW" secondAttribute="baseline" id="jOF-fc-65O"/>
+                            <constraint firstItem="C4t-Xl-BnW" firstAttribute="top" secondItem="NIQ-Bk-2Q3" secondAttribute="top" id="fYW-Ej-O9r"/>
+                            <constraint firstItem="NIQ-Bk-2Q3" firstAttribute="top" secondItem="o2j-Xr-lbp" secondAttribute="bottom" constant="99" id="h4s-ou-aX9"/>
+                            <constraint firstItem="cQP-3b-Ez8" firstAttribute="centerX" secondItem="heM-Kd-zVL" secondAttribute="centerX" id="hhv-uy-zRH"/>
+                            <constraint firstItem="heM-Kd-zVL" firstAttribute="baseline" secondItem="cry-Wr-pOu" secondAttribute="baseline" id="iUI-R5-6lj"/>
                             <constraint firstItem="g7o-0q-WNg" firstAttribute="leading" secondItem="dOb-eO-yqm" secondAttribute="leading" id="kJb-KX-Btj"/>
+                            <constraint firstItem="iSp-FH-HNn" firstAttribute="leading" secondItem="dOb-eO-yqm" secondAttribute="trailing" constant="-101" id="kQ7-kV-bJg"/>
                             <constraint firstItem="o2j-Xr-lbp" firstAttribute="leading" secondItem="DdW-nU-i6y" secondAttribute="leadingMargin" id="kTc-3L-zjW"/>
-                            <constraint firstItem="cQP-3b-Ez8" firstAttribute="centerX" secondItem="heM-Kd-zVL" secondAttribute="centerX" id="krD-ec-f7Y"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="iSp-FH-HNn" secondAttribute="trailing" constant="31" id="lux-iR-Bq2"/>
-                            <constraint firstItem="C4t-Xl-BnW" firstAttribute="top" secondItem="iSp-FH-HNn" secondAttribute="top" id="nKn-Oi-L0U"/>
+                            <constraint firstItem="jHL-e5-BNW" firstAttribute="leading" secondItem="DdW-nU-i6y" secondAttribute="leadingMargin" constant="26" id="mQq-hd-NTx"/>
+                            <constraint firstItem="iSp-FH-HNn" firstAttribute="height" secondItem="C4t-Xl-BnW" secondAttribute="height" id="myE-Wc-wsn"/>
                             <constraint firstItem="o2j-Xr-lbp" firstAttribute="trailing" secondItem="ZiV-Wt-Yu2" secondAttribute="trailing" id="oFB-IG-urN"/>
                             <constraint firstAttribute="trailing" secondItem="g7o-0q-WNg" secondAttribute="trailing" id="qe1-nO-Ye1"/>
-                            <constraint firstItem="C4t-Xl-BnW" firstAttribute="bottom" secondItem="iSp-FH-HNn" secondAttribute="bottom" id="tlO-Vx-hN3"/>
-                            <constraint firstItem="C4t-Xl-BnW" firstAttribute="top" secondItem="NIQ-Bk-2Q3" secondAttribute="top" id="yFu-uE-YVH"/>
+                            <constraint firstItem="NIQ-Bk-2Q3" firstAttribute="height" secondItem="C4t-Xl-BnW" secondAttribute="height" id="v6H-dl-9I7"/>
+                            <constraint firstItem="NIQ-Bk-2Q3" firstAttribute="width" secondItem="C4t-Xl-BnW" secondAttribute="width" id="vXi-OL-yjt"/>
+                            <constraint firstItem="C4t-Xl-BnW" firstAttribute="top" secondItem="Maf-KD-yaF" secondAttribute="bottom" constant="46" id="wzB-Sm-Zwe"/>
+                            <constraint firstItem="dOb-eO-yqm" firstAttribute="leading" secondItem="NIQ-Bk-2Q3" secondAttribute="trailing" constant="-101" id="xJc-ke-vcX"/>
                         </constraints>
                     </view>
                     <connections>
