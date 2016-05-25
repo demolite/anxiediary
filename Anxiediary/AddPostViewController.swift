@@ -19,6 +19,10 @@ class AddPostViewController: UIViewController {
             titleTextField.text = post.title
         }
         
+        if let post = post {
+            textTextField.text = post.text
+        }
+        
         
     }
     
@@ -46,7 +50,11 @@ class AddPostViewController: UIViewController {
         
         if let post = post {
             post.title = titleTextField.text!
-        } else {
+        }
+        if let post = post {
+            post.text = textTextField.text!
+        }
+        else {
             let newPost = Post(title: titleTextField.text!, text: textTextField.text!, mood: mood)
             newPost.date = NSDate()
             
