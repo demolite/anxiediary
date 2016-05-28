@@ -166,7 +166,7 @@ If you want to find out more and keep up to date with new information about Anxi
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="cW2-eX-x1S">
-                                <rect key="frame" x="20" y="220" width="560" height="193"/>
+                                <rect key="frame" x="20" y="220" width="560" height="237"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -189,7 +189,7 @@ If you want to find out more and keep up to date with new information about Anxi
                             <constraint firstItem="CPq-uw-sei" firstAttribute="leading" secondItem="rkb-wc-HPJ" secondAttribute="leading" id="UPo-OJ-k8B"/>
                             <constraint firstItem="Vlf-P3-oo7" firstAttribute="top" secondItem="4QE-If-taE" secondAttribute="bottom" constant="55" id="a4b-a9-eU7"/>
                             <constraint firstItem="cW2-eX-x1S" firstAttribute="top" secondItem="4QE-If-taE" secondAttribute="bottom" constant="156" id="jL4-cJ-tob"/>
-                            <constraint firstItem="vD4-in-tZL" firstAttribute="top" secondItem="cW2-eX-x1S" secondAttribute="bottom" constant="187" id="pSm-y3-Z9p"/>
+                            <constraint firstItem="vD4-in-tZL" firstAttribute="top" secondItem="cW2-eX-x1S" secondAttribute="bottom" constant="143" id="pSm-y3-Z9p"/>
                             <constraint firstAttribute="trailing" secondItem="CPq-uw-sei" secondAttribute="trailing" id="ua4-dB-8zC"/>
                             <constraint firstItem="cW2-eX-x1S" firstAttribute="centerX" secondItem="CPq-uw-sei" secondAttribute="centerX" id="uiZ-lv-Itl"/>
                         </constraints>
