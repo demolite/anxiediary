@@ -20,21 +20,11 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background " translatesAutoresizingMaskIntoConstraints="NO" id="FHN-6L-oYK">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SwM-Lo-H5N">
-                                <rect key="frame" x="20" y="396" width="560" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="fcr-36-gg1"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <state key="normal" title="Add New Diary Post">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="hTM-2e-ZwK" kind="show" id="KY8-UC-bKR"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b7d-Fl-6at">
                                 <rect key="frame" x="20" y="454" width="560" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="InP-B4-zKd"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="About Anxiediary">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -44,7 +34,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aeu-oN-ECw">
-                                <rect key="frame" x="20" y="512" width="560" height="50"/>
+                                <rect key="frame" x="20" y="507" width="560" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="lpy-dI-gKs"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="Review">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -54,9 +47,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kr6-5e-tNs">
-                                <rect key="frame" x="270" y="565" width="60" height="27"/>
+                                <rect key="frame" x="20" y="565" width="560" height="27"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="ijH-Mu-LiG"/>
+                                    <constraint firstAttribute="height" constant="27" id="riq-gC-m7a"/>
                                 </constraints>
                                 <state key="normal" title="Reset">
                                     <color key="titleColor" red="1" green="0.11410951939726988" blue="0.035286653184660288" alpha="1" colorSpace="calibratedRGB"/>
@@ -65,27 +58,38 @@
                                     <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uJT-zW-Zf7"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SwM-Lo-H5N">
+                                <rect key="frame" x="20" y="396" width="560" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="oyQ-Se-xAx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Add New Diary Post">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="hTM-2e-ZwK" kind="show" id="KY8-UC-bKR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Aeu-oN-ECw" firstAttribute="leading" secondItem="b7d-Fl-6at" secondAttribute="leading" id="2lO-X0-Ijx"/>
+                            <constraint firstItem="SwM-Lo-H5N" firstAttribute="trailing" secondItem="b7d-Fl-6at" secondAttribute="trailing" id="3Ms-G5-aGD"/>
                             <constraint firstItem="FHN-6L-oYK" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="6Rr-E1-LCE"/>
-                            <constraint firstItem="b7d-Fl-6at" firstAttribute="centerX" secondItem="FHN-6L-oYK" secondAttribute="centerX" id="82S-MH-g1R"/>
-                            <constraint firstItem="b7d-Fl-6at" firstAttribute="trailing" secondItem="SwM-Lo-H5N" secondAttribute="trailing" id="Gve-Fp-zCz"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="b7d-Fl-6at" secondAttribute="bottom" constant="96" id="L9W-d3-KYg"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kr6-5e-tNs" secondAttribute="bottom" constant="8" symbolic="YES" id="LAO-Fg-sSg"/>
+                            <constraint firstItem="b7d-Fl-6at" firstAttribute="top" secondItem="SwM-Lo-H5N" secondAttribute="bottom" constant="8" id="A3n-2Q-T1d"/>
+                            <constraint firstItem="b7d-Fl-6at" firstAttribute="leading" secondItem="SwM-Lo-H5N" secondAttribute="leading" id="BNs-zW-HdP"/>
+                            <constraint firstItem="kr6-5e-tNs" firstAttribute="centerX" secondItem="FHN-6L-oYK" secondAttribute="centerX" id="C70-Y8-nbz"/>
+                            <constraint firstItem="Aeu-oN-ECw" firstAttribute="leading" secondItem="kr6-5e-tNs" secondAttribute="leading" id="Cvy-VM-UBi"/>
+                            <constraint firstItem="Aeu-oN-ECw" firstAttribute="top" secondItem="b7d-Fl-6at" secondAttribute="bottom" constant="3" id="FrJ-b0-Ojx"/>
+                            <constraint firstItem="kr6-5e-tNs" firstAttribute="top" secondItem="FHN-6L-oYK" secondAttribute="bottom" constant="-35" id="HpM-Zu-KrP"/>
+                            <constraint firstItem="Aeu-oN-ECw" firstAttribute="trailing" secondItem="b7d-Fl-6at" secondAttribute="trailing" id="K7u-i5-CNc"/>
                             <constraint firstItem="FHN-6L-oYK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="LxN-DW-F4o"/>
-                            <constraint firstItem="Aeu-oN-ECw" firstAttribute="top" secondItem="b7d-Fl-6at" secondAttribute="bottom" constant="8" symbolic="YES" id="Mr4-tT-n7f"/>
-                            <constraint firstItem="SwM-Lo-H5N" firstAttribute="leading" secondItem="b7d-Fl-6at" secondAttribute="leading" id="Odt-eT-1AN"/>
                             <constraint firstItem="FHN-6L-oYK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="YXC-qT-6IX"/>
-                            <constraint firstItem="SwM-Lo-H5N" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="YoE-3a-rTx"/>
                             <constraint firstAttribute="trailing" secondItem="FHN-6L-oYK" secondAttribute="trailing" id="bCW-O8-eJu"/>
-                            <constraint firstItem="Aeu-oN-ECw" firstAttribute="trailing" secondItem="b7d-Fl-6at" secondAttribute="trailing" id="pPn-Fw-T9T"/>
-                            <constraint firstItem="kr6-5e-tNs" firstAttribute="top" secondItem="Aeu-oN-ECw" secondAttribute="bottom" constant="3" id="pj9-Na-b2A"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Aeu-oN-ECw" secondAttribute="bottom" constant="38" id="so2-qa-c97"/>
-                            <constraint firstItem="b7d-Fl-6at" firstAttribute="top" secondItem="SwM-Lo-H5N" secondAttribute="bottom" constant="8" symbolic="YES" id="swd-zi-2fG"/>
-                            <constraint firstItem="kr6-5e-tNs" firstAttribute="centerX" secondItem="Aeu-oN-ECw" secondAttribute="centerX" id="xiz-Cf-aKG"/>
-                            <constraint firstItem="SwM-Lo-H5N" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="332" id="y3a-AF-1Na"/>
+                            <constraint firstItem="kr6-5e-tNs" firstAttribute="top" secondItem="Aeu-oN-ECw" secondAttribute="bottom" constant="8" id="eBR-0b-aec"/>
+                            <constraint firstItem="Aeu-oN-ECw" firstAttribute="leading" secondItem="b7d-Fl-6at" secondAttribute="leading" id="eKB-Q1-Qwn"/>
+                            <constraint firstItem="kr6-5e-tNs" firstAttribute="trailing" secondItem="Aeu-oN-ECw" secondAttribute="trailing" id="xSP-7L-R4h"/>
+                            <constraint firstItem="b7d-Fl-6at" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="zZ9-VC-NEw"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fu7-Sg-EeX"/>
@@ -111,7 +115,7 @@
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZhR-Ly-ZsE">
                                 <rect key="frame" x="20" y="208" width="560" height="383"/>
-                                <string key="text">Anxiediary is a self-help app for anxiety and mild depression sufferers. Used mainly while the user is being councelled by a professional, this friendly mobile app can help users target when they get stressed, anxious or depressed by colour coding each daily diary entry.
+                                <string key="text">Anxiediary is a self-help app for anxiety and mild depression sufferers. Used mainly while the user is being counselled by a professional, this friendly mobile app can help users target when they get stressed, anxious or depressed by colour coding each daily diary entry.
 
  The colour system within this app determines the mood you wish to record in each entry. Depending on how you feel, each entry will be colour coded accordingly to allow you to track your progress as the month goes by. Using the traffic light colours red, amber and green, you can indicate the amount of positivity you have felt. 
 

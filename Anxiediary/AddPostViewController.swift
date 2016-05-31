@@ -17,13 +17,20 @@ class AddPostViewController: UIViewController {
         
         if let post = post {
             titleTextField.text = post.title
-        }
-        
-        if let post = post {
             textTextField.text = post.text
+            mood = Int(post.mood)
+            print(mood)
+            
+            switch post.mood {
+            case 1  :
+                moodOne.alpha = 1
+            case 2  :
+                moodTwo.alpha = 1
+            default :
+                moodThree.alpha = 1
+            }
+            
         }
-        
-        
         
     }
     
@@ -51,13 +58,9 @@ class AddPostViewController: UIViewController {
         
         if let post = post {
             post.title = titleTextField.text!
-        }
-        if let post = post {
             post.text = textTextField.text!
-        }
-        
-        
-        else {
+            post.mood = mood
+        } else {
             let newPost = Post(title: titleTextField.text!, text: textTextField.text!, mood: mood)
             newPost.date = NSDate()
             
